@@ -13,8 +13,8 @@
 #define BLUE			RGB(0,0,255)
 
 #define PANTON			RGB(255,103,32)
-#define SKYCOLOR		RGB(123,196,196)
-#define INDIGO            RGB(25,0,130)
+#define SKYCOLOR		RGB(123,123,255)
+#define INDIGO			RGB(75,0,130)
 
 #define LERP(s,e,t)		s + (e - s) * t
 

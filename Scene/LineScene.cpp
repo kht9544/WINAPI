@@ -18,7 +18,7 @@ void LineScene::Update()
 	_line2->_end = mousePos;
 
 	Vector2 a = (_line2->_end - _line2->_start); 
-	Vector2 b = (_line1->_end - _line1->_start);
+	Vector2 b = (_line1->_end - _line1->_start); 
 
 	Vector2 bNormal = b.NormalVector2(); 
 

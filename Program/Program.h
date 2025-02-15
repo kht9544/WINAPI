@@ -6,7 +6,7 @@ public:
 	~Program();
 
 	void Update();
-
+	
 	void Render(HDC hdc);
 
 	static HDC backBuffer;

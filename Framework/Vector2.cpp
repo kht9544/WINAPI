@@ -3,8 +3,7 @@
 
 bool Vector2::operator==(const Vector2& other)
 {
-	return this->_x == other._x && this->_y == other._y;
-
+	return this->_x == other._x && this->_y == other._y;;
 }
 
 bool Vector2::operator!=(const Vector2& other)
@@ -41,10 +40,18 @@ Vector2 Vector2::NormalVector2()
 
 bool Vector2::IsBetween(Vector2 v1, Vector2 v2)
 {
-	float Cross1 = this->Cross(v1); 
-	float Cross2 = this->Cross(v2); 
+	float Cross1 = this->Cross(v1); // +
+	float Cross2 = this->Cross(v2); // -
 
 	bool result = (Cross1 * Cross2) < 0;
 
 	return result;
+}
+
+int Vector2::ManhattanDistance(Vector2 other)
+{
+	int xDistance = int(_x - other._x);
+	int yDistance = int(_y - other._y);
+
+	return abs(xDistance) + abs(yDistance);
 }

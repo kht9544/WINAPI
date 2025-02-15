@@ -93,9 +93,8 @@ public:
 		float result = _x * other._y - _y * other._x;
 		return result;
 	}
-	
-	bool operator==(const Vector2& other);
 
+	bool operator==(const Vector2& other);
 	bool operator!=(const Vector2& other);
 
 	float Length() const;
@@ -107,6 +106,8 @@ public:
 	Vector2 NormalVector2();
 
 	bool IsBetween(Vector2 v1, Vector2 v2);
+
+	int ManhattanDistance(Vector2 other);
 
 	float _x;
 	float _y;

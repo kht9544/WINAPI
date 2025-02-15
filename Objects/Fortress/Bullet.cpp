@@ -19,6 +19,7 @@ void Bullet::Update()
 
 	_col->Update();
 	_col->_center += _direction * _speed;
+
 	OutControll();
 	bool isOut = false;
 	if (_lifeTime > _delayTime || isOut)
@@ -66,7 +67,6 @@ bool Bullet::IsOut()
 void Bullet::OutControll()
 {
 	Vector2 center = _col->_center;
-
 	if (center._x > WIN_WIDTH || center._x < 0)
 	{
 		_direction._x *= -1.0f;

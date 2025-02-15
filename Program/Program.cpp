@@ -7,6 +7,7 @@
 #include "Scene/Line2Scene.h"
 #include "Scene/CannonScene.h"
 #include "Scene/MazeScene.h"
+#include "Scene/AlkanoidScene.h"
 
 HDC Program::backBuffer = nullptr;
 

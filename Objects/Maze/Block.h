@@ -6,8 +6,8 @@ public:
 	{
 		ABLE, 
 		DISABLE, 
-		PLAYER_POS,
-		PUT_PRINT 
+		PLAYER_POS, 
+		FOOT_PRINT
 	};
 
 	Block();

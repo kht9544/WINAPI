@@ -1,4 +1,8 @@
-﻿#define IDS_APP_TITLE			103
+﻿//{{NO_DEPENDENCIES}}
+// Microsoft Visual C++에서 생성한 포함 파일입니다.
+// 다음에서 사용 WINAPI_Algorithm.rc
+
+#define IDS_APP_TITLE			103
 
 #define IDR_MAINFRAME			128
 #define IDD_WINAPIALGORITHM_DIALOG	102
@@ -12,6 +16,7 @@
 #ifndef IDC_STATIC
 #define IDC_STATIC				-1
 #endif
+// 다음은 새 개체에 사용할 기본값입니다.
 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS

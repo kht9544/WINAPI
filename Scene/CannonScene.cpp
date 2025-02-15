@@ -2,12 +2,15 @@
 #include "CannonScene.h"
 #include "Objects/Cannon.h"
 #include "Objects/Bullet.h"
+
+
 CannonScene::CannonScene()
 {
 	_cannon1 = make_shared<Cannon>();
 	_cannon2 = make_shared<Cannon>();
 
 	_cannon1->isControlled = true;
+
 
 	for (auto bullet : _cannon1->GetBullets())
 	{
@@ -23,6 +26,12 @@ void CannonScene::Update()
 {
 	_cannon1->Update();
 	_cannon2->Update();
+
+	// Attack1
+	//for (auto bullet : _cannon1->GetBullets())
+	//{
+	//	bullet->Attack_Cannon(_cannon2);
+	//}
 }
 
 void CannonScene::Render(HDC hdc)

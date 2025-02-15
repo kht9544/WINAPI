@@ -15,7 +15,9 @@ public:
 	bool IsOut();
 	void OutControll();
 
+
 	void Attack_Cannon(shared_ptr<class Cannon> cannon);
+
 	void Attack_Cannon();
 	void SetTarget(shared_ptr<Cannon> cannon) { _target = cannon; }
 
